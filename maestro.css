@@ -1,0 +1,419 @@
+
+
+/* This line imports my font family from the google developers */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+header, nav, #middleInside, footer, aside { display: block; }
+/* This section formats my nav bar with rounded corners, and my background color*/
+header img {
+padding: 50px 300px;}
+#blue{
+	background-color:  	#0096A4;
+		color: #fff;
+font-size: 1em;
+margin: 10px 0px;
+padding: 0px 120px 0px 127px;
+font-family: Georgia, "Times New Roman", serif;
+text-shadow: 3px 3px 3px #999;
+text-align: left;
+
+    }
+hr{color: #fff;
+margin: 0 45px;}
+div{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+div input:hover { background-color:#ccc; }
+#right{
+float: right;
+padding:2px 10px }
+#left{
+float: left;
+padding:8px 40px;}
+#center{width: 300px;
+    margin-left: auto;
+    margin-right: auto;}
+table{border-color: #fff;
+border: solid 0px #fff;}
+th, td {
+text-align: center;
+margin: auto;
+;
+}
+p{
+color: #fff;
+font-size: .7em;
+text-shadow: 3px 3px 3px #999;
+
+}
+#headerText{padding: 0px 300px;
+font-size: .7em;}
+#middleColText{
+	color: #fff;
+font-size: 1em;
+margin: 10px 30px;
+padding: 0px 12px 0px 13px;
+font-family: Georgia, "Times New Roman", serif;
+text-shadow: 3px 3px 3px #999;
+}
+
+
+#object{
+	background-color: #3AC2D0 ;
+	padding: 10px 20px 10px 60px;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+	visibility: hidden;
+}
+#slide{
+	background-color: #3AC2D0 ;
+	padding: 10px 20px 10px 60px;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+	visibility: hidden;
+}
+
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+
+/*
+==============================================
+slideExpandUp
+==============================================
+*/
+
+
+.slideExpandUp{
+	animation-name: slideExpandUp;
+	-webkit-animation-name: slideExpandUp;	
+
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease -out;
+
+	visibility: visible !important;	
+}
+
+@keyframes slideExpandUp {
+	0% {
+		transform: translateY(100%) scaleX(0.5);
+	}
+	30%{
+		transform: translateY(-8%) scaleX(0.5);
+	}	
+	40%{
+		transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		transform: translateY(0%) scaleX(0.95);		
+	}
+	90% {
+		transform: translateY(0%) scaleX(1.02);
+	}	
+	100%{
+		transform: translateY(0%) scaleX(1);		
+	}
+}
+
+@-webkit-keyframes slideExpandUp {
+	0% {
+		-webkit-transform: translateY(100%) scaleX(0.5);
+	}
+	30%{
+		-webkit-transform: translateY(-8%) scaleX(0.5);
+	}	
+	40%{
+		-webkit-transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		-webkit-transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		-webkit-transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		-webkit-transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		-webkit-transform: translateY(0%) scaleX(0.95);		
+	}
+	90% {
+		-webkit-transform: translateY(0%) scaleX(1.02);
+	}	
+	100%{
+		-webkit-transform: translateY(0%) scaleX(1);		
+	}
+}
+
+}
+
+/* This section formats my body text and color*/
+body { 
+font-family: 'Open Sans', sans-serif;
+color: #3AC2D0;
+background-color: #3AC2D0;
+}
+/* this container holds the structuring for my entire page */
+#pagewrap {
+padding: 5px;
+width: 1100px;
+margin: 20px auto;
+background-color: #3AC2D0;
+}
+
+aside img{
+text-align: center;
+padding: 10px 40px 10px 5px;
+width: 90%;
+height: auto;
+}
+/* This section formats my header with my logo and color as well as font size, color and padding. */
+header {
+background-image: url(images/hero.png);
+background-repeat: no-repeat;
+background-color: #3AC2D0;
+height: 80%;
+font-family: Georgia, "Times New Roman", serif;
+font-size: 1.5em;
+text-shadow: 3px 3px 3px #999;
+margin-bottom: 0;
+}
+/* This section centers my headers in the 3 columns*/
+h2{
+text-align: center;
+}
+/* This section formats my left column floating it to the left and its background and text color. */
+#leftCol {
+width: 200px;
+float: left;
+padding: 5px 15px;
+color: #3AC2D0;
+background-color: #3AC2D0;
+}
+/* This section formats the back container of the middle section that is the blue box around the actual container the text is in. */
+#middle {
+width: 594px; /* Account for margins + border values */
+float: left;
+padding: 5px 15px;
+margin: 0px 5px 5px 5px;
+background-color: #3AC2D0;
+border-radius: 10px;
+}
+/* This section holds all my content in the middle section it is floated left outside of the left column and has a white background*/
+#middleInside {
+width: 589px;
+float: left;
+padding: 5px 0px;
+margin: 10px 5px 10px 5px;
+background-color: #3AC2D0;
+color:  #3AC2D0;
+}
+/* This section formats my right column width  and colors. */
+aside{
+width: 150px;
+padding: 5px 15px;
+float: left;
+color: #1a4982;
+background-color: #F0EFEF;
+}
+/* This section formats my footer padding, fontsize and alignment. */
+footer {
+clear: both;
+padding: 0 15px;
+font-size:70%;
+text-align: center;
+}
+
+/************************************************************************************
+
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+#pagewrap {
+width: 94%;
+}
+div #blue{
+	padding: 0px;
+}
+#headerText{
+	margin:auto;
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+p{margin:auto;
+	width: auto;
+	height: auto;}
+#header img{width: 94%;
+padding: 1% 4%;
+margin: auto;}
+#leftCol {
+width: 21%;
+padding: 1% 4%;
+}
+#middle {
+width: 61%;
+padding: 1% 4%;
+margin: 0px 0px 5px 5px;
+float: right;
+}
+#middleInside{
+	width: auto;
+float: none;
+margin-left: 0px;
+}
+#sidebar {
+clear: both;
+padding: 1% 4%;
+width: auto;
+float: none;
+}
+#aside{
+display: inline;}
+header, footer {
+padding: 1% 4%;
+}
+}
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+#header{width: auto;
+margin: auto;
+padding: 1% 4%;}
+#headerText{
+	padding: 0;
+	margin:auto;
+	width: auto;
+	height: auto;
+}
+header img {
+    padding: 11;
+}
+#object{    width: 80%;
+    height: auto;
+    padding-left: 20%;
+}
+p{margin:auto;
+	width: auto;
+	height: auto;}
+#leftCol {
+width: auto;
+float: none;
+}
+#middle {
+width: auto;
+float: none;
+margin-left: 0px;
+}
+#middleInside{
+	width: auto;
+float: none;
+margin-left: 0px;
+}
+#sidebar {
+width: auto;
+float: none;
+}
+#aside{
+display: inline;}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+header img {
+	float: left;
+	margin: 100%;
+height: auto;
+}
+#headerText{
+	margin:auto;
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+p{margin:auto;
+	width: auto;
+	height: auto;}
+h1 {
+font-size: 2em;
+}
+#sidebar {
+display: none;
+}
+table{
+display: none;}
+}
+#leftCol {
+background: #3AC2D0;
+}
+#sidebar {
+background: #f0efef;
+}
+header, #content, #headerText, #middle,  #middleInside, #sidebar {
+margin-bottom: 5px;
+}
+#pagewrap, header, #leftCol, #middle, #sidebar {
+border: solid 0px #ccc;
+} 
+
